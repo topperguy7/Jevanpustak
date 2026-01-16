@@ -1,12 +1,20 @@
 body{
+    min-height: 100%;
     margin: 0;
     background-color: rgb(255, 248, 235);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 
 .header{
     background-color: rgb(28, 13, 45);
     color:aliceblue;
-    height:30px;
+    height:10px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -44,6 +52,9 @@ body{
 }
 
 .foot{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
     text-align: center;
     height:58px;
     background-color: rgb(28, 13, 45);

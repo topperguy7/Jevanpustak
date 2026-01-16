@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe:Pohe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 style="text-align: center; font-size:50px;">Pohe</h1>
-    <div style="margin-left:300px; font-size: 30px;">
-        <ol>
-            <li>Take 2 cups poha in a sieve</li>
-            <li>Wash pohe twice</li>
-            <li>Wait five minutes until pohe becomes soft</li>
-            <li>Heat 2 tablespoon oil in pan</li>
-            <li>Add 1 teaspoon mustard seeds</li>
-            <li>Wait until they splutter</li>
-            <li>Add 2 tablespoons peanuts</li>
-            <li>Fry until peanuts become light brown</li>
-            <li>Add curry leaves and chopped green chilli</li>
-            <li>Add 1 chopped onion</li>
-            <li>Cook until onion turns soft</li>
-            <li>Add turmeric powder and salt</li>
-            <li>Mix well</li>
-            <li>Add softened poha</li>
-            <li>Mix gently on low flame</li>
-            <li>Cover the pan, wait 2-3 minutes</li>
-            <li>Open lid and add lemon juice</li>
-            <li>Mix once</li>
-            <li>Turn off flame Serve hot</li>
-        </ol>
-    </div>
+<body style=" background-color: rgb(199, 224, 180)">
+    <header class="header">
+        <div style="font-size: 26px; font-weight: bold;">JEVAN PUSTAK</div>
+        <div class="menu">
+            <a style="color:aliceblue;" href="index.html" target="_blank">Home</a>
+            <a style="color:aliceblue;" href="about.html" target="_blank">About</a>
+        </div>
+    </header>
+    <main>
+        <div style="font-size:4rem; text-align:center; font-weight: bold;">Poha Recipe</div>
+        <div style="display:flex; flex-direction: column; justify-content: center; align-items:center; padding-top:20px;">
+            <div id="timer" style="font-size:8em; font-weight:bold; background-color:black; color:aliceblue; border-radius: 10px; padding:20px">
+                00:00
+            </div>
+            <div>
+                <button style="font-size:3em; width:fit-content; margin:10px;" onclick="start()">Start</button>
+                <button style="font-size:3em; width:fit-content; margin:10px;" onclick="stop()">Stop</button>
+            </div>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap;">
+            <div style="display:flex; flex-direction:column; padding-left:4vw; font-size:2rem;">
+                <h3 style="font-size:2.5em; text-align:left; margin-bottom:0px;">Ingredients</h3>
+                    <ul>
+                        <li>2 cups thick poha (flattened rice)</li> 
+                        <li>1 medium chopped onion</li> 
+                        <li>finely chopped 1 small potato</li> 
+                        <li>finely diced (optional) 2-3 green chilies</li> 
+                        <li>slit 8-10 curry leaves</li> 
+                        <li>2 tbsp peanuts</li> 
+                        <li>½ tsp mustard seeds</li> 
+                        <li>½ tsp cumin seeds</li> 
+                        <li>¼ tsp turmeric powder Salt</li>  
+                        <li>1 tsp sugar and 1/2 tsp salt</li> 
+                        <li>1 tsp Lemon juice</li> 
+                        <li>chopped cilantro for garnish</li>
+                        <li>Rinse poha 2-3 times using water and keep to soak for 5 minutes</li>
+                    </ul>
+            </div>
+            <div id="recipe" style="margin-left:25vw; margin-top:10vh; font-size:2.5em; text-align:left; color:blue">
+            </div>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <p style="color:white;">@2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="poha.js"></script>
 </body>
 </html>
